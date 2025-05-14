@@ -1,0 +1,28 @@
+{
+  "pipeline_id": "fb090e67-d0b6-47b9-a3a7-22cee7442e00",
+  "spec": {
+    "id": "fb090e67-d0b6-47b9-a3a7-22cee7442e00",
+    "pipeline_type": "WORKSPACE",
+    "name": "testing_etl_pipeline",
+    "libraries": [
+      {
+        "notebook": {
+          "path": "/Users/gapop2016@gmail.com/TESTING_ETL_PIPELINE/explorations/sample_exploration"
+        }
+      }
+    ],
+    "schema": "default",
+    "continuous": false,
+    "development": true,
+    "photon": true,
+    "channel": "PREVIEW",
+    "catalog": "workspace",
+    "serverless": true,
+    "data_sampling": false
+  },
+  "state": "IDLE",
+  "name": "testing_etl_pipeline",
+  "creator_user_name": "gapop2016@gmail.com",
+  "last_modified": 1747179263721,
+  "run_as_user_name": "gapop2016@gmail.com"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "testing-app",
+  "description": "",
+  "compute_status": {
+    "state": "STOPPED",
+    "message": "Start the app compute to deploy the app."
+  },
+  "app_status": {
+    "state": "UNAVAILABLE",
+    "message": "App status is unavailable."
+  },
+  "url": "https://testing-app-2968031126495607.aws.databricksapps.com",
+  "create_time": "2025-05-14T00:57:43Z",
+  "creator": "gapop2016@gmail.com",
+  "update_time": "2025-05-14T01:08:24Z",
+  "updater": "gapop2016@gmail.com",
+  "service_principal_id": 2996120988188902,
+  "service_principal_name": "app-54spn7 testing-app",
+  "default_source_code_path": "/Workspace/Users/gapop2016@gmail.com/databricks_api_app",
+  "service_principal_client_id": "99209e11-b237-4a62-b937-22d07dddddfb",
+  "id": "99209e11-b237-4a62-b937-22d07dddddfb",
+  "oauth2_app_integration_id": "39147ff4-6cfc-47af-a40c-52038cc6fbba",
+  "oauth2_app_client_id": "39147ff4-6cfc-47af-a40c-52038cc6fbba"
+}

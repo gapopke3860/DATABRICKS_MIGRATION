@@ -1,0 +1,71 @@
+{
+  "job_id": 795537159040499,
+  "creator_user_name": "gapop2016@gmail.com",
+  "run_as_user_name": "gapop2016@gmail.com",
+  "run_as_owner": true,
+  "settings": {
+    "name": "pipeline_2",
+    "email_notifications": {
+      "no_alert_for_skipped_runs": false
+    },
+    "webhook_notifications": {},
+    "timeout_seconds": 0,
+    "max_concurrent_runs": 1,
+    "tasks": [
+      {
+        "task_key": "create_products",
+        "run_if": "ALL_SUCCESS",
+        "sql_task": {
+          "file": {
+            "path": "/Workspace/Users/gapop2016@gmail.com/US_DATABRICKS_TESTING/US_notebooks/Pipeline_2/US_job2_step1_create_products.sql",
+            "source": "WORKSPACE"
+          },
+          "warehouse_id": "8b7f0273935d80e4"
+        },
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "create_reviews",
+        "run_if": "ALL_SUCCESS",
+        "sql_task": {
+          "file": {
+            "path": "/Workspace/Users/gapop2016@gmail.com/US_DATABRICKS_TESTING/US_notebooks/Pipeline_2/US_job2_step2_create_reviews.sql",
+            "source": "WORKSPACE"
+          },
+          "warehouse_id": "8b7f0273935d80e4"
+        },
+        "timeout_seconds": 0,
+        "email_notifications": {},
+        "webhook_notifications": {}
+      },
+      {
+        "task_key": "create_product_reviews",
+        "depends_on": [
+          {
+            "task_key": "create_reviews"
+          },
+          {
+            "task_key": "create_products"
+          }
+        ],
+        "run_if": "ALL_SUCCESS",
+        "sql_task": {
+          "file": {
+            "path": "/Workspace/Users/gapop2016@gmail.com/US_DATABRICKS_TESTING/US_notebooks/Pipeline_2/US_job2_step3_create_product_review_view.sql",
+            "source": "WORKSPACE"
+          },
+          "warehouse_id": "8b7f0273935d80e4"
+        },
+        "timeout_seconds": 0,
+        "email_notifications": {}
+      }
+    ],
+    "format": "MULTI_TASK",
+    "queue": {
+      "enabled": true
+    }
+  },
+  "created_time": 1747179076464
+}

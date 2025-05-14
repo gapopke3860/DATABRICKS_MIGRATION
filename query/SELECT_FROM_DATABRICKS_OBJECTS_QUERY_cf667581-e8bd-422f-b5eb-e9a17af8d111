@@ -1,0 +1,16 @@
+{
+  "id": "cf667581-e8bd-422f-b5eb-e9a17af8d111",
+  "display_name": "SELECT FROM DATABRICKS OBJECTS QUERY",
+  "owner_user_name": "gapop2016@gmail.com",
+  "warehouse_id": "8b7f0273935d80e4",
+  "query_text": "SELECT * FROM databricks_objects;",
+  "run_as_mode": "OWNER",
+  "lifecycle_state": "ACTIVE",
+  "last_modifier_user_name": "gapop2016@gmail.com",
+  "parent_path": "/Workspace/Users/gapop2016@gmail.com",
+  "create_time": "2025-05-13T23:36:55Z",
+  "update_time": "2025-05-13T23:37:51Z",
+  "apply_auto_limit": true,
+  "catalog": "workspace",
+  "schema": "default"
+}

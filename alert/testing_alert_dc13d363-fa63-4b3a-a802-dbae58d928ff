@@ -1,0 +1,27 @@
+{
+  "id": "dc13d363-fa63-4b3a-a802-dbae58d928ff",
+  "display_name": "testing_alert",
+  "query_id": "cf667581-e8bd-422f-b5eb-e9a17af8d111",
+  "state": "UNKNOWN",
+  "seconds_to_retrigger": 0,
+  "lifecycle_state": "ACTIVE",
+  "condition": {
+    "op": "GREATER_THAN",
+    "operand": {
+      "column": {
+        "name": "file_name"
+      }
+    },
+    "threshold": {
+      "value": {
+        "double_value": 1.0
+      }
+    },
+    "empty_result_state": "UNKNOWN"
+  },
+  "owner_user_name": "gapop2016@gmail.com",
+  "parent_path": "/Workspace/Users/gapop2016@gmail.com",
+  "create_time": "2025-05-13T23:38:10Z",
+  "update_time": "2025-05-13T23:38:10Z",
+  "notify_on_ok": false
+}
